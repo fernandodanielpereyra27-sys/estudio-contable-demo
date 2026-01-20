@@ -1,0 +1,281 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #2f5f6f;
+    padding: 5px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background-color: #2f5f6f;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: white;
+    font-size: 15px;
+}
+
+/* SERVICIOS */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #2f5f6f;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    width: 230px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #18b6ae;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+}
+
+/* CONTACTO */
+.contact {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2f5f6f;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2f5f6f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+/* WHATSAPP FLOTANTE */
+.whatsapp-float {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+}
+/* =========================
+   RESPONSIVE - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 10px 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* SERVICIOS */
+    .services {
+        padding: 40px 15px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CONTACTO */
+    .contact {
+        padding: 40px 15px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
+}
+/* QUIÉNES SOMOS */
+.about {
+    background-color: #f4f6f8;
+    padding: 60px 20px;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #2f5f6f;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    max-width: 450px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: #2f5f6f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #244b57;
+}
